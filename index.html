@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2D Boat Physics Sandbox</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ui">
+    <h1>2D Boat Physics Sandbox</h1>
+    <p>Wave-driven buoyancy + destruction tools</p>
+    <div class="toolbar">
+      <button data-tool="push" class="active">Push</button>
+      <button data-tool="cannon">Cannonball</button>
+      <button data-tool="mine">Mine</button>
+      <button data-tool="saw">Saw</button>
+      <button id="reset">Reset Boat</button>
+    </div>
+    <div class="stats" id="stats"></div>
+    <ul>
+      <li><strong>Push:</strong> click/drag on boat to apply force.</li>
+      <li><strong>Cannonball:</strong> click to launch a high-speed projectile.</li>
+      <li><strong>Mine:</strong> click water to drop a mine, it explodes after 1.2s.</li>
+      <li><strong>Saw:</strong> drag a line through the hull to cut it.</li>
+    </ul>
+  </div>
+
+  <canvas id="sim"></canvas>
+
+  <script src="app.js"></script>
+</body>
+</html>
